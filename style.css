@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  h1 {
+    text-align: center;
+    background-color: #5a9;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .section {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 100%;
+  }
+
+h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5a9;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Отцентрировать контент по горизонтали */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Добавить display: flex для центрирования содержимого по вертикали */
+    flex-direction: column; /* Установить направление основной оси на вертикальное */
+    align-items: center; /* Выравнивание элементов по центру контейнера */
+  }
+  a {
+    color: #5a9;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .section {
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .language-switch-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .language-switch-container {
+        text-align: center;
+    }
+}
+
+  /* Стили для ссылок на другие языковые версии резюме */
+.language-switch {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.language-switch:hover {
+    background-color: #3e8e41;
+    color: white;
+    text-decoration: none;
+}
